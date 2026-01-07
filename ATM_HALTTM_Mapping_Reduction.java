@@ -101,6 +101,10 @@ class TM
         {
             return false;
         }
+        if (inputAlphabet.contains("#"))
+        {
+            return false;
+        }
         dupeTest = new HashSet<String>(inputAlphabet);
         if (dupeTest.size() < inputAlphabet.size())
         {
